@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VANTA — Partner Network</title>
+<style>
+:root{--bg:#090909;--panel:#111;--panel2:#151515;--line:#292929;--ink:#f5f5f0;--muted:#999;--gold:#f5b82e;--gold2:#ffcc55;--green:#35d07f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{text-decoration:none;color:inherit}.wrap{max-width:1220px;margin:auto;padding:0 28px}
+nav{height:78px;border-bottom:1px solid #1e1e1e;background:rgba(9,9,9,.82);backdrop-filter:blur(18px);position:sticky;top:0;z-index:20}.navin{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:-.04em}.mark{width:34px;height:34px;background:var(--gold);color:#111;border-radius:9px;display:grid;place-items:center;font-weight:1000;box-shadow:0 0 28px rgba(245,184,46,.2)}.links{display:flex;gap:27px;color:#a7a7a7;font-size:13px}.links a:hover{color:#fff}.btn{border:0;border-radius:10px;padding:12px 17px;font-weight:800;cursor:pointer}.primary{background:var(--gold);color:#111}.primary:hover{background:var(--gold2);transform:translateY(-1px)}.ghost{background:#171717;color:#eee;border:1px solid #2b2b2b}.hero{padding:90px 0 65px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:650px;height:650px;border-radius:50%;right:-300px;top:-240px;background:radial-gradient(circle,rgba(245,184,46,.16),transparent 67%);pointer-events:none}.grid{display:grid;grid-template-columns:1fr 1fr;gap:62px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #3b321d;background:#16130b;color:#f5c861;border-radius:999px;padding:7px 11px;font-size:11px;font-weight:900;letter-spacing:.09em;text-transform:uppercase}.pulse{width:7px;height:7px;background:var(--green);border-radius:50%;box-shadow:0 0 0 5px rgba(53,208,127,.09)}h1{font-size:clamp(47px,6vw,76px);line-height:.94;letter-spacing:-.07em;margin:22px 0}.accent{color:var(--gold)}.lead{color:#a8a8a8;font-size:18px;line-height:1.7;max-width:610px}.actions{display:flex;gap:11px;margin-top:30px}.micro{color:#666;font-size:11px;margin-top:13px}.dash{background:linear-gradient(145deg,#151515,#0f0f0f);border:1px solid #2c2c2c;border-radius:23px;padding:18px;box-shadow:0 28px 80px rgba(0,0,0,.5);transform:perspective(1200px) rotateY(-3deg);transition:.5s}.dash:hover{transform:perspective(1200px) rotateY(0)}.dtop{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #272727;padding:5px 4px 16px}.small{font-size:11px;color:#777}.online{font-size:10px;color:#62dd96;background:#0e2518;border:1px solid #19482d;padding:5px 8px;border-radius:999px;font-weight:800}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:12px}.metric{background:#111;border:1px solid #242424;border-radius:12px;padding:13px}.metric span{font-size:10px;color:#777}.metric strong{display:block;font-size:20px;margin-top:5px;letter-spacing:-.04em}.up{color:var(--green);font-size:10px;margin-top:5px}.chart{height:185px;background:#0d0d0d;border:1px solid #222;border-radius:13px;margin-top:10px;position:relative;overflow:hidden}.chart svg{width:100%;height:100%}.activity{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}.act{padding:13px;border:1px solid #242424;background:#111;border-radius:12px}.act strong{display:block;font-size:13px}.act span{font-size:10px;color:#777}.section{padding:85px 0}.center{text-align:center}.kicker{color:var(--gold);font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.center h2{font-size:43px;letter-spacing:-.06em;margin:10px 0 12px}.sub{color:#8e8e8e;max-width:650px;margin:auto;line-height:1.7}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-top:42px}.card{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:23px;transition:.25s}.card:hover{border-color:#4a4026;transform:translateY(-4px);box-shadow:0 18px 45px rgba(0,0,0,.28)}.num{width:31px;height:31px;background:#211c10;color:var(--gold);border:1px solid #493d20;border-radius:8px;display:grid;place-items:center;font-weight:900;font-size:11px}.card h3{font-size:16px;margin:19px 0 8px}.card p{font-size:13px;color:#858585;line-height:1.65;margin:0}.split{display:grid;grid-template-columns:.85fr 1.15fr;gap:15px}.darkbox{border:1px solid #302b20;background:linear-gradient(140deg,#18150e,#101010);border-radius:20px;padding:31px}.darkbox h3{font-size:34px;line-height:1.05;letter-spacing:-.05em;margin:12px 0}.darkbox p{color:#969696;line-height:1.7}.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:23px}.chip{font-size:10px;padding:7px 9px;border-radius:7px;border:1px solid #373227;background:#17150f;color:#c9b47d}.levels{border:1px solid var(--line);border-radius:20px;background:#101010;overflow:hidden}.level{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;align-items:center;padding:18px 21px;border-bottom:1px solid #242424;font-size:12px}.level:last-child{border-bottom:0}.level.head{font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:#666;font-weight:900;background:#0c0c0c}.level strong{font-size:13px}.tag{background:#231e11;color:#eec55d;border:1px solid #40361d;border-radius:6px;padding:5px 7px;font-size:10px;font-weight:900;display:inline-block}.tag.green{background:#102217;color:#62dd96;border-color:#1c4930}.monitor{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:35px}.monitor .card{min-height:155px}.icon{font-size:20px;color:var(--gold);margin-bottom:15px}.faq{max-width:800px;margin:35px auto}.faq details{background:#111;border:1px solid #292929;border-radius:12px;padding:17px 19px;margin:8px 0}.faq summary{font-size:13px;font-weight:800;cursor:pointer}.faq p{font-size:12px;color:#818181;line-height:1.65;margin:13px 0 0}.cta{border:1px solid #3d331d;background:radial-gradient(circle at 80% 20%,rgba(245,184,46,.14),transparent 40%),#12110d;border-radius:23px;padding:36px;display:flex;justify-content:space-between;align-items:center;gap:30px}.cta h2{margin:0 0 7px;font-size:32px;letter-spacing:-.05em}.cta p{margin:0;color:#888;font-size:13px}footer{padding:38px 0;color:#5f5f5f;font-size:10px;border-top:1px solid #181818}.fine{color:#5f5f5f;font-size:10px;margin-top:10px;line-height:1.6}
+@media(max-width:900px){.grid,.split{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.monitor{grid-template-columns:1fr}.links{display:none}.dash{transform:none}}
+@media(max-width:560px){.wrap{padding:0 18px}.hero{padding-top:55px}.steps{grid-template-columns:1fr}.metrics{grid-template-columns:1fr 1fr}.metrics .metric:last-child{grid-column:1/-1}.level{grid-template-columns:1.3fr 1fr 1fr 1fr;padding:14px 10px;font-size:10px}.level strong{font-size:11px}.actions{flex-direction:column}.btn{text-align:center}.center h2{font-size:33px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap navin">
+<a class="brand" href="#"><span class="mark">V</span> VANTA <span style="color:#555;font-weight:600;font-size:10px;letter-spacing:.08em">PARTNER NETWORK</span></a>
+<div class="links"><a href="#workflow">Workflow</a><a href="#rewards">Rewards</a><a href="#analytics">Analytics</a><a href="#faq">FAQ</a></div>
+<button class="btn primary" onclick="document.getElementById('join').scrollIntoView({behavior:'smooth'})">Accéder au réseau</button>
+</div></nav>
+
+<section class="hero"><div class="wrap grid">
+<div>
+<span class="eyebrow"><i class="pulse"></i> Partner ecosystem · v2.4</span>
+<h1>Share smarter.<br><span class="accent">Earn transparently.</span></h1>
+<p class="lead">Une infrastructure partenaire conçue pour suivre les recommandations, qualifier les événements et centraliser vos récompenses dans une interface unique.</p>
+<div class="actions"><button class="btn primary" onclick="document.getElementById('join').scrollIntoView({behavior:'smooth'})">Créer mon espace partenaire →</button><button class="btn ghost" onclick="document.getElementById('workflow').scrollIntoView({behavior:'smooth'})">Explorer le programme</button></div>
+<div class="micro">Tracking événementiel · Attribution · Validation · Reporting</div>
+</div>
+<div class="dash">
+<div class="dtop"><div><strong style="font-size:13px">Partner Command Center</strong><div class="small">Performance overview · Demo account</div></div><span class="online">● LIVE TRACKING</span></div>
+<div class="metrics">
+<div class="metric"><span>Qualified referrals</span><strong>128</strong><div class="up">↑ 18.4% vs. last period</div></div>
+<div class="metric"><span>Conversion rate</span><strong>26.6%</strong><div class="up">↑ 4.2 pts</div></div>
+<div class="metric"><span>Eligible reward</span><strong>2.4×</strong><div class="up">Current tier</div></div>
+</div>
+<div class="chart"><svg viewBox="0 0 700 210" preserveAspectRatio="none"><defs><linearGradient id="a" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f5b82e" stop-opacity=".25"/><stop offset="1" stop-color="#f5b82e" stop-opacity="0"/></linearGradient></defs><g stroke="#202020" stroke-width="1"><path d="M0 45H700M0 90H700M0 135H700M0 180H700"/></g><path d="M0 164 C65 153 92 155 135 137 S205 151 250 118 S320 126 370 104 S430 122 475 81 S540 99 585 57 S650 69 700 34 L700 210 L0 210Z" fill="url(#a)"/><path d="M0 164 C65 153 92 155 135 137 S205 151 250 118 S320 126 370 104 S430 122 475 81 S540 99 585 57 S650 69 700 34" fill="none" stroke="#f5b82e" stroke-width="3"/></svg></div>
+<div class="activity"><div class="act"><strong>Referral ID</strong><span>VN-84F2-A91C · Active</span></div><div class="act"><strong>Settlement status</strong><span style="color:#62dd96">● Eligible for review</span></div></div>
+</div>
+</div></section>
+
+<section class="section" id="workflow"><div class="wrap">
+<div class="center"><div class="kicker">01 · Workflow</div><h2>From link to verified reward.</h2><p class="sub">Chaque étape du parcours est identifiable, mesurable et rattachée à un identifiant partenaire.</p></div>
+<div class="steps">
+<div class="card"><div class="num">01</div><h3>Activate</h3><p>Création de l'espace et génération d'un Referral ID personnel.</p></div>
+<div class="card"><div class="num">02</div><h3>Share</h3><p>Diffusion du lien sur les canaux autorisés et acquisition de trafic qualifié.</p></div>
+<div class="card"><div class="num">03</div><h3>Attribute</h3><p>Les événements sont rattachés au partenaire selon les règles d'attribution.</p></div>
+<div class="card"><div class="num">04</div><h3>Validate</h3><p>Les actions éligibles sont contrôlées avant intégration au calcul des récompenses.</p></div>
+</div></div></section>
+
+<section class="section" id="rewards"><div class="wrap split">
+<div class="darkbox"><div class="kicker">02 · Reward engine</div><h3>Une mécanique lisible, pilotée par les données.</h3><p>Le moteur de récompense consolide les événements validés, les seuils d'activité et les règles applicables au niveau partenaire.</p><div class="chips"><span class="chip">Referral ID</span><span class="chip">Event attribution</span><span class="chip">Eligibility</span><span class="chip">Settlement</span><span class="chip">Audit trail</span></div></div>
+<div class="levels"><div class="level head"><div>Tier</div><div>Activity</div><div>Multiplier*</div><div>Status</div></div>
+<div class="level"><div><strong>Starter</strong></div><div>1–9</div><div><span class="tag">1.5×</span></div><div>Open</div></div>
+<div class="level"><div><strong>Active</strong></div><div>10–24</div><div><span class="tag">2.0×</span></div><div>Open</div></div>
+<div class="level"><div><strong>Advanced</strong></div><div>25–49</div><div><span class="tag">3.0×</span></div><div>Open</div></div>
+<div class="level"><div><strong>Elite</strong></div><div>50+</div><div><span class="tag green">4.0×</span></div><div style="color:#62dd96">Eligible</div></div></div>
+</div><div class="wrap fine">* Valeurs d'interface à remplacer par les conditions contractuelles réelles. Aucun coefficient affiché ici ne constitue une garantie de rendement.</div></section>
+
+<section class="section" id="analytics"><div class="wrap">
+<div class="center"><div class="kicker">03 · Analytics layer</div><h2>Votre activité, sans zone grise.</h2><p class="sub">Des indicateurs structurés pour comprendre les performances et les événements qui alimentent le calcul.</p></div>
+<div class="monitor">
+<div class="card"><div class="icon">↗</div><h3>Attribution Engine</h3><p>Rattachement des événements au Referral ID et conservation des données nécessaires au suivi.</p></div>
+<div class="card"><div class="icon">◎</div><h3>Conversion Events</h3><p>Qualification des actions, exclusions éventuelles et passage du statut pending à validated.</p></div>
+<div class="card"><div class="icon">▣</div><h3>Performance Reporting</h3><p>Lecture consolidée des clics, conversions, taux d'activité et récompenses éligibles.</p></div>
+</div>
+</div></section>
+
+<section class="section" id="faq"><div class="wrap"><div class="center"><div class="kicker">04 · Knowledge base</div><h2>Questions fréquentes</h2></div><div class="faq">
+<details><summary>Qu'est-ce qu'un Referral ID ?</summary><p>Un identifiant unique associé à un partenaire. Il sert à rattacher les événements éligibles issus de son lien aux données de suivi.</p></details>
+<details><summary>Pourquoi certaines actions sont-elles “pending” ?</summary><p>Une action peut nécessiter une phase de validation avant d'être considérée comme éligible au calcul. Les critères doivent être définis dans les conditions du programme.</p></details>
+<details><summary>Comment le taux de conversion est-il calculé ?</summary><p>À titre d'exemple, il peut être calculé à partir du nombre d'actions qualifiées rapporté au nombre de visites ou de clics attribués, selon la définition retenue par le programme.</p></details>
+<details><summary>Où consulter mes récompenses ?</summary><p>Le dashboard regroupe les récompenses pending, validated et settled, ainsi que l'historique des événements associés.</p></details>
+</div></div></section>
+
+<section class="section" id="join"><div class="wrap"><div class="cta"><div><h2>Ready to enter the network?</h2><p>Activez votre espace partenaire et obtenez votre identifiant de recommandation.</p></div><a class="btn primary" href="https://t.me/MatHawks" target="_blank" rel="noopener">Commencer →</a></div></div></section>
+
+<footer><div class="wrap">© 2026 VANTA Partner Network · Interface de démonstration · Les conditions, coefficients, règles d'éligibilité et modalités de paiement doivent correspondre au fonctionnement réel du programme.</div></footer>
+</body>
+</html>
